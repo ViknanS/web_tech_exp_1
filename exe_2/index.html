@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RESEARCH SURVEY FORM</title>
+  <style>
+    body {
+      background-color: pink;
+      font-size: 18px;
+      text-align: center;
+    }
+    .form1 {
+      display: inline-block;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <h1>Research Survey Form</h1>
+  <div class="form1">
+    <form action="/submit_survey.php" method="post" enctype="multipart/form-data">
+      <label for="fname">Name:</label><br>
+      <input placeholder="First" type="text" id="fname" name="fname" required>
+      <input placeholder="Last" type="text" name="lname" required><br><br>
+
+      <label for="password">Create Password:</label><br>
+      <input type="password" id="password" name="password" required><br><br>
+
+      <label for="dob">Date of Birth:</label><br>
+      <input type="date" name="dob" id="dob" required><br><br>
+
+      <label for="address">Address:</label><br>
+      <input placeholder="Street Address" type="text" id="address" name="address"><br>
+      <input placeholder="Street Address line 2" type="text"><br>
+      <input placeholder="City" type="text"><br>
+      <input placeholder="State/Province" type="text"><br>
+      <input placeholder="Postal/Zip Code"><br><br>
+
+      <fieldset>
+        <legend>Contact Details</legend>
+        <label for="country">Country</label><br>
+        <select name="country" id="country">
+          <option value="India">India</option>
+          <option value="USA">USA</option>
+          <option value="UK">UK</option>
+          <option value="Germany">Germany</option>
+          <option value="Australia">Australia</option>
+        </select><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="phone">Phone:</label><br>
+        <input placeholder="### ### ####" type="tel" id="phone" name="phone"><br><br>
+
+        <label for="website">Personal Website/Portfolio:</label><br>
+        <input type="url" id="website" name="website"><br><br>
+
+        <label for="field">Search Field of Interest:</label><br>
+        <input type="search" id="field" name="field"><br><br>
+      </fieldset>
+
+      <label>Gender:</label><br>
+      <input type="radio" id="male" name="gender" value="Male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="Female">
+      <label for="female">Female</label><br><br>
+
+      <label for="photo">Upload Profile Photo:</label><br>
+      <input type="file" name="photo"><br><br>
+
+      <label>Research Interests:</label><br>
+      <input type="checkbox" id="ai" name="research" value="Artificial Intelligence">
+      <label for="ai">Artificial Intelligence</label><br>
+
+      <input type="checkbox" id="ml" name="research" value="Machine Learning">
+      <label for="ml">Machine Learning</label><br>
+
+      <input type="checkbox" id="ds" name="research" value="Data Science">
+      <label for="ds">Data Science</label><br>
+
+      <input type="checkbox" id="iot" name="research" value="IoT">
+      <label for="iot">IoT</label><br>
+
+      <input type="checkbox" id="networks" name="research" value="Networks">
+      <label for="networks">Networks</label><br>
+
+      <input type="checkbox" id="cyber" name="research" value="Cybersecurity">
+      <label for="cyber">Cybersecurity</label><br><br>
+
+      <label for="notes">Short Summary of Research Background:</label><br>
+      <textarea id="notes" name="notes" rows="4" cols="50">Briefly describe your academic or research experience.</textarea><br><br>
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+  </div>
+</body>
+</html>
