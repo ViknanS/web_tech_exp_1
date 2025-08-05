@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f9;
+  color: #222;
+}
+
+header {
+  background-color: #111;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+header input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.intro {
+  padding: 2rem;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  background-color: #f0f0f0;
+}
+
+.phone-card {
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.2s;
+  padding: 1rem;
+}
+
+.phone-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.phone-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+.phone-card h3 {
+  margin: 0.5rem 0;
+  color: #0077cc;
+}
+
+.content-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.content-section img {
+  flex: 1 1 400px;
+  max-width: 100%;
+  border-radius: 12px;
+  margin-right: 2rem;
+}
+
+.content-section .text {
+  flex: 1 1 400px;
+  padding: 1rem;
+}
+
+footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
