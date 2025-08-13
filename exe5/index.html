@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake order</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="java1.js"></script>
+</head>
+<body>
+    <div class="head">
+        <h1>Cake Shop</h1>
+    </div>
+    <div class="image">
+        <img src="choco.jpg" alt="img1">
+        <img src="vanilla.jpg" alt="img2">
+        <img src="pink velvet.jpg" alt="img3">
+        <img src="dutecake.jpg" alt="img4">
+    </div>
+    <div class="p">
+        <p>chocolate cake rs:900 </p>
+        <p>vanilla cake rs:800 </p>
+        <p>pink velvet rs:1000</p>
+        <p>dute cake rs:1500 </p>
+    </div>
+    <div class="head2">
+        <h2>order cake</h2>
+     <div class="box">
+        <div class="form">
+         <form action="/action_page.php">
+            <label for="chocolateQuantity">chocolate cake (quantity)</label><br>
+            <input type="text" id="chocolateQuantity" name="chocolateQuantity" placeholder="quantity" onkeyup="calculateTotal()"><br><br>
+            <label for="vanillaQuantity">vanilla Cake (quantity)</label><br>
+            <input type="text" id="vanillaQuantity" name="vanillaQuantity" placeholder="quantity" onkeyup="calculateTotal()"><br><br>
+            <label for="pinkVelvetQuantity">pink velvet (quantity)</label><br>
+            <input type="text" id="pinkVelvetQuantity" name="pinkVelvetQuantity" placeholder="quantity" onkeyup="calculateTotal()"><br><br>
+            <label for="duteQuantity">dute Cake (quantity)</label><br>
+            <input type="text" id="duteQuantity" name="duteQuantity" placeholder="quantity" onkeyup="calculateTotal()"><br><br>
+            <div class="submit">
+                <input type="submit" value="place order"><br>
+            </div>
+            <hr>
+            <h4>Purchase order bill!!!</h4>
+            <p>Total price: Rs. <span id="totalPrice">0</span></p>
+         </form>
+        </div>
+    </div>
+</body>
+</html>
