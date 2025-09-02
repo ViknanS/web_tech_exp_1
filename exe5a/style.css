@@ -1,0 +1,55 @@
+.head h1{
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    background-color: #e71a1a;
+    padding: 10px;
+}
+.image {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px; 
+}
+.p {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px;
+    margin: 10px; 
+}
+.box {
+    width: 25%;
+    margin:  auto; 
+    border: 2px solid #0c0c0c;
+    padding: 10px;
+}
+.head2 h2{
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    padding: 20px;
+    color: rgb(108, 14, 231);
+}
+.box h4,p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: darkgreen;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image img {
+    width: 200px;
+    height: auto;
+    margin: 5px; 
+    border-radius: 10px; 
+}
